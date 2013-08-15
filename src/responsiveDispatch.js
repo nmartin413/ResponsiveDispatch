@@ -1,6 +1,6 @@
 ﻿/*
-    ResponsiveDispatch
-    
+    ResponsiveDispatch v0.1.0 - https://github.com/nmartin413/ResponsiveDispatch
+
     requires jQuery, Backbone
 */
 
