@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../lib/jquery.js"></script>
+    <script src="../lib/underscore.js"></script>
+    <script src="../lib/backbone.js"></script>
+    <script src="../src/responsiveDispatch.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            responsiveDispatch.init({
+                logging: true,
+                ranges: [
+                    { name: "large", min: 979, max: Infinity },
+                    { name: "medium", min: 767, max: 979 },
+                    { name: "small", min: 0, max: 767 }
+                ]
+            });
+
+            $('p').hide();
+
+            responsiveDispatch.on('didEnter:large', function () {
+                $('.large').show();
+            });
+            responsiveDispatch.on('didExit:large', function () {
+                $('.large').hide();
+            });
+            responsiveDispatch.on('didEnter:medium', function () {
+                $('.medium').show();
+            });
+            responsiveDispatch.on('didExit:medium', function () {
+                $('.medium').hide();
+            });
+            responsiveDispatch.on('didEnter:small', function () {
+                $('.small').show();
+            });
+            responsiveDispatch.on('didExit:small', function () {
+                $('.small').hide();
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <div>
+        <p class="large">Large</p>
+        <p class="medium">Medium</p>
+        <p class="small">Small</p>
+    </div>
+
+    <script>
+
+    </script>
+
+</body>
+</html>
