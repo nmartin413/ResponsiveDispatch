@@ -1,5 +1,5 @@
 ﻿## Responsive Dispatch
-#### version 0.0.1
+#### version 0.1.0
 
 Use responsive dispatch to create setup and teardown functions for your responsive websites.
 
