@@ -5,6 +5,9 @@ Use responsive dispatch to create setup and teardown functions for your responsi
 
 Depends on jQuery & Backbone
 
+[Download (minified)](https://raw.github.com/nmartin413/ResponsiveDispatch/master/src/responsiveDispatch.min.js)
+
+
 ### Usage
 
 Initialize responsive dispatch with the following code:
