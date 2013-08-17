@@ -1,0 +1,11 @@
+{
+	"name": "responsive-dispatch",
+	
+	"version": "0.1.1",
+
+	"dependencies": {
+		"grunt": "*",
+		"grunt-contrib-concat": "*",
+		"grunt-contrib-uglify": "*"
+	}
+}

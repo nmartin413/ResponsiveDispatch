@@ -1,11 +1,11 @@
 ﻿## Responsive Dispatch
-#### version 0.1.0
+#### version 0.1.1
 
 Use responsive dispatch to create setup and teardown functions for your responsive websites.
 
 Depends on jQuery & Backbone
 
-[Download (minified)](https://raw.github.com/nmartin413/ResponsiveDispatch/master/src/responsiveDispatch.min.js)
+[Download (minified)](https://raw.github.com/nmartin413/ResponsiveDispatch/master/out/responsiveDispatch.min.js)
 
 
 ### Usage

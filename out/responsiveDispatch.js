@@ -1,3 +1,47 @@
+/*
+	Responsive Dispatch
+*/
+
+(function ($) {
+
+var logging = false;
+var ranges = [];
+var entrPrefix = "didEnter:";
+var exitPrefix = "didExit:";
+var currWidth = 0;
+/* Range */
+
+var Range = function (opts) {
+    this.name = opts.name;
+    this.min = opts.min;
+    this.max = opts.max;
+    this.hasBeenInRange = false;
+};
+
+Range.prototype.isInCurrent = function () {
+    return isSizeInRange(currWidth, this);
+};
+
+Range.prototype.fireEntr = function () {
+    this.hasBeenInRange = true;
+    dispatch.trigger(entrPrefix + this.name);
+};
+
+Range.prototype.fireExit = function () {
+    this.hasBeenInRange = false;
+    dispatch.trigger(exitPrefix + this.name);
+};
+/* RangeList */
+
+var RangeList = function () { };
+
+RangeList.prototype = [];
+
+RangeList.prototype.inCurrentRange = function () {
+    return _(this).filter(function (range) {
+        return range.isInCurrent();
+    });
+};
 
 /* Dispatch */
 
@@ -68,3 +112,5 @@ dispatch.on('all', function (evtName) {
     $(window).load(windowLoad);
 
 })(dispatch);
+
+}(jQuery));
