@@ -1,4 +1,9 @@
-﻿## Responsive Dispatch
+## rolled into [Respondr](https://github.com/nmartin413/Respondr)
+### use Respondr, it's better
+
+
+
+## Responsive Dispatch
 #### version 0.1.1
 
 Use responsive dispatch to create setup and teardown functions for your responsive websites.
